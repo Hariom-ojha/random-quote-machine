@@ -1,4 +1,4 @@
-export const Quotes = [
+export const BookQuotes = [
     {
         id: 0,
         quote: "That's the thing about books. They let you travel without moving your feet.",

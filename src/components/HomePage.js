@@ -28,8 +28,8 @@ const Home = (props) => {
                             <CardImg src="https://cdn.hipwallpaper.com/i/94/28/lprF25.jpg" className="card-img-top" alt="Realtionship" />
                             <CardBody className="card-body p-2">
                                 <CardTitle className="mb-0">
-                                    <Link to="/relation">
-                                        <h4 className="name">Relationship Quotes</h4>
+                                    <Link to="/love">
+                                        <h4 className="name">Love Quotes</h4>
                                     </Link>
                                 </CardTitle>
                             </CardBody>

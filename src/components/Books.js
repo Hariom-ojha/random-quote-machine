@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 import { Button } from 'reactstrap';
 import Header from './Navbar'
 import { Modal, ModalBody, ModalHeader } from 'reactstrap';
-import { Quotes } from '../shared/Book';
+import { BookQuotes } from '../shared/BookQuotes';
 
 
 
@@ -26,21 +26,21 @@ class Book extends Component {
     };
 
     Next = () => {
-        this.setState({ index: (this.state.index + 1) % Quotes.length });
+        this.setState({ index: (this.state.index + 1) % BookQuotes.length });
     };
 
     Prev = () => {
         if (this.state.index === 0) {
             this.state = {
-                index: Quotes.length
+                index: BookQuotes.length
             }
         }
-        this.setState({ index: (this.state.index - 1) % Quotes.length });
+        this.setState({ index: (this.state.index - 1) % BookQuotes.length });
     };
 
     render() {
 
-        const Quote = Quotes[this.state.index];
+        const Quote = BookQuotes[this.state.index];
 
         return (
             <>

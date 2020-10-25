@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from './HomePage';
 import Book from './Books';
-import Relation from './Relation';
+import Love from './Love';
 import Breakup from './Breakup';
 import Success from './Success';
 import Sports from './Sports';
@@ -18,7 +18,7 @@ class Main extends Component {
                     <Switch>
                         <Route path="/home" component={() => <Home />} />
                         <Route path="/book" component={() => <Book />} />
-                        <Route path="/relation" component={() => <Relation />} />
+                        <Route path="/love" component={() => <Love />} />
                         <Route path="/breakup" component={() => <Breakup />} />
                         <Route path="/success" component={() => <Success />} />
                         <Route path="/sports" component={() => <Sports />} />

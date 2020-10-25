@@ -28,8 +28,8 @@ const Header = (props) => {
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to="/relation">
-                                    Relationship
+                                <NavLink className="nav-link" to="/love">
+                                    Love
                                 </NavLink>
                             </NavItem>
                             <NavItem>

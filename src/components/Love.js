@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
-import Header from './Navbar';
+import Header from './Navbar'
 import { Modal, ModalBody, ModalHeader } from 'reactstrap';
-import { BirthdayQuotes } from '../shared/BirthdayQuotes';
+import { LoveQuotes } from '../shared/LoveQuotes';
 
 
-class Birthday extends Component {
+class Love extends Component {
 
     constructor(props) {
         super(props)
@@ -25,25 +25,25 @@ class Birthday extends Component {
     };
 
     Next = () => {
-        this.setState({ index: (this.state.index + 1) % BirthdayQuotes.length });
+        this.setState({ index: (this.state.index + 1) % LoveQuotes.length });
     };
 
     Prev = () => {
         if (this.state.index === 0) {
             this.state = {
-                index: BirthdayQuotes.length
+                index: LoveQuotes.length
             }
         }
-        this.setState({ index: (this.state.index - 1) % BirthdayQuotes.length });
+        this.setState({ index: (this.state.index - 1) % LoveQuotes.length });
     };
 
     render() {
 
-        const Quote = BirthdayQuotes[this.state.index];
+        const Quote = LoveQuotes[this.state.index];
 
         return (
             <>
-                <div className="birthday_bg">
+                <div className="relation_bg">
                     <Header />
                     <div className="pt-5">
                         <div className="container">
@@ -83,7 +83,6 @@ class Birthday extends Component {
             </>
         )
     }
-    
 }
 
-export default Birthday;
+export default Love;
