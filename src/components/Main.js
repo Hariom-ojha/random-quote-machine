@@ -10,6 +10,7 @@ import Life from './Life';
 import Social from './Social';
 import Friend from './Friend';
 
+
 class Main extends Component {
     render() {
         return (
