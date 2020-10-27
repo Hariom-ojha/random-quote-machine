@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
-import Header from './Navbar'
+import Header from './Navbar';
 import { Modal, ModalBody, ModalHeader } from 'reactstrap';
-import { FriendQuotes } from '../shared/FriendQuotes';
+import { LifeQuotes } from '../shared/LifeQuotes';
 import {
     FacebookShareCount, FacebookShareButton, TwitterShareButton, WhatsappShareButton, FacebookMessengerShareButton,
     TwitterIcon, FacebookIcon, WhatsappIcon, FacebookMessengerIcon
 } from 'react-share';
 
 
-class Friend extends Component {
+class Life extends Component {
 
     constructor(props) {
         super(props)
@@ -29,25 +29,25 @@ class Friend extends Component {
     };
 
     Next = () => {
-        this.setState({ index: (this.state.index + 1) % FriendQuotes.length });
+        this.setState({ index: (this.state.index + 1) % LifeQuotes.length });
     };
 
     Prev = () => {
         if (this.state.index === 0) {
             this.state = {
-                index: FriendQuotes.length
+                index: LifeQuotes.length
             }
         }
-        this.setState({ index: (this.state.index - 1) % FriendQuotes.length });
+        this.setState({ index: (this.state.index - 1) % LifeQuotes.length });
     };
 
     render() {
 
-        const Quote = FriendQuotes[this.state.index];
+        const Quote = LifeQuotes[this.state.index];
 
         return (
             <>
-                <div className="friend_bg">
+                <div className="life_bg">
                     <Header />
                     <div className="pt-5">
                         <div className="container">
@@ -114,6 +114,7 @@ class Friend extends Component {
             </>
         )
     }
+    
 }
 
-export default Friend;
+export default Life;

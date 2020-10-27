@@ -48,8 +48,8 @@ const Header = (props) => {
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to="/birthday">
-                                    Birthday
+                                <NavLink className="nav-link" to="/life">
+                                    Life
                                 </NavLink>
                             </NavItem>
                             <NavItem>

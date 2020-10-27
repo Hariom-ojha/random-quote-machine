@@ -3,6 +3,10 @@ import { Button } from 'reactstrap';
 import Header from './Navbar';
 import { Modal, ModalBody, ModalHeader } from 'reactstrap';
 import { BreakupQuotes } from '../shared/BreakupQuotes';
+import {
+    FacebookShareCount, FacebookShareButton, TwitterShareButton, WhatsappShareButton, FacebookMessengerShareButton,
+    TwitterIcon, FacebookIcon, WhatsappIcon, FacebookMessengerIcon
+} from 'react-share';
 
 
 class Breakup extends Component {
@@ -69,10 +73,37 @@ class Breakup extends Component {
                                     </ModalHeader>
                                     <ModalBody>
                                         <div className="d-flex justify-content-around">
-                                            <a href="https://www.facebook.com/"><span className="fa fa-facebook fa-lg bg-primary"></span></a>
-                                            <a href="https://www.instagram.com/"><span className="fa fa-instagram fa-lg bg-success"></span></a>
-                                            <a href="https://myaccount.google.com/"><span className="fa fa-google fa-lg bg-danger"></span></a>
-                                            <a href="https://twitter.com/"><span className="fa fa-twitter fa-lg bg-info"></span></a>
+                                            <div>
+                                                <FacebookShareButton url="#" quote={Quote.quote} hashtag="#BookQuotes">
+                                                    <FacebookIcon size={70} round={true} />
+                                                </FacebookShareButton>
+                                                <div>
+                                                    <FacebookShareCount url="#">
+                                                        {count => count}
+                                                    </FacebookShareCount>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <WhatsappShareButton url="#" separator=":: ">
+                                                    <WhatsappIcon size={70} round={true} />
+                                                </WhatsappShareButton>
+                                                <div>
+                                                    &nbsp;
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <FacebookMessengerShareButton url="#" appId="521270401588372">
+                                                    <FacebookMessengerIcon size={70} round={true} />
+                                                </FacebookMessengerShareButton>
+                                            </div>
+                                            <div>
+                                                <TwitterShareButton url="#" title={Quote.quote}>
+                                                    <TwitterIcon size={70} round={true} />
+                                                </TwitterShareButton>
+                                                <div>
+                                                    &nbsp;
+                                                </div>
+                                            </div>
                                         </div>
                                     </ModalBody>
                                 </Modal>

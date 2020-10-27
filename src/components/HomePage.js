@@ -71,8 +71,8 @@ const Home = (props) => {
                             <CardImg src="https://c1.wallpaperflare.com/preview/429/472/835/dark-birthday-cake-topper.jpg" className="card-img-top" alt="Birthday" />
                             <CardBody className="card-body p-2">
                                 <CardTitle className="mb-0">
-                                    <Link to="/birthday">
-                                        <h4 className="name">Birthday Quotes</h4>
+                                    <Link to="/life">
+                                        <h4 className="name">Life Quotes</h4>
                                     </Link>
                                 </CardTitle>
                             </CardBody>

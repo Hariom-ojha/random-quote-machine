@@ -26,7 +26,7 @@
     max-height: 23vh;
 }
 
-.book_bg, .relation_bg, .brkup_bg, .success_bg, .sports_bg, .birthday_bg, .social_bg, .friend_bg {
+.book_bg, .relation_bg, .brkup_bg, .success_bg, .sports_bg, .life_bg, .social_bg, .friend_bg {
     background-size: cover;
     min-height: 100vh;
 }
@@ -51,7 +51,7 @@
     background-image: url('https://www.cimaglobal.com/Global/CIMA%20Insights%20Blog/rsz_rugby_blog.jpg');
 }
 
-.birthday_bg {
+.life_bg {
     background-image: url('https://c1.wallpaperflare.com/preview/429/472/835/dark-birthday-cake-topper.jpg');
 }
 

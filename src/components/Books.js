@@ -76,17 +76,17 @@ class Book extends Component {
                                     <ModalBody>
                                         <div className="d-flex justify-content-around">
                                             <div>
-                                                <FacebookShareButton url="" quote={Quote.quote}>
+                                                <FacebookShareButton url="#" quote={Quote.quote} hashtag="#BookQuotes">
                                                     <FacebookIcon size={70} round={true} />
                                                 </FacebookShareButton>
                                                 <div>
-                                                    <FacebookShareCount url="">
+                                                    <FacebookShareCount url="#">
                                                         {count => count}
                                                     </FacebookShareCount>
                                                 </div>
                                             </div>
                                             <div>
-                                                <WhatsappShareButton url="" separator=":: ">
+                                                <WhatsappShareButton url={Quote.quote} separator=":: ">
                                                     <WhatsappIcon size={70} round={true} />
                                                 </WhatsappShareButton>
                                                 <div>
@@ -94,12 +94,12 @@ class Book extends Component {
                                                 </div>
                                             </div>
                                             <div>
-                                                <FacebookMessengerShareButton url="" appId="521270401588372">
+                                                <FacebookMessengerShareButton url="#" appId="521270401588372">
                                                     <FacebookMessengerIcon size={70} round={true} />
                                                 </FacebookMessengerShareButton>
                                             </div>
                                             <div>
-                                                <TwitterShareButton url="" title={Quote.quote}>
+                                                <TwitterShareButton url="#" title={Quote.quote}>
                                                     <TwitterIcon size={70} round={true} />
                                                 </TwitterShareButton>
                                                 <div>

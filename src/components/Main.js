@@ -6,7 +6,7 @@ import Love from './Love';
 import Breakup from './Breakup';
 import Success from './Success';
 import Sports from './Sports';
-import Birthday from './Birthday';
+import Life from './Life';
 import Social from './Social';
 import Friend from './Friend';
 
@@ -22,7 +22,7 @@ class Main extends Component {
                         <Route path="/breakup" component={() => <Breakup />} />
                         <Route path="/success" component={() => <Success />} />
                         <Route path="/sports" component={() => <Sports />} />
-                        <Route path="/birthday" component={() => <Birthday />} />
+                        <Route path="/life" component={() => <Life />} />
                         <Route path="/social" component={() => <Social />} />
                         <Route path="/friend" component={() => <Friend />} />
                         <Redirect to="/home" />
