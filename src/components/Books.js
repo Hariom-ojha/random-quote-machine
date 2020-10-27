@@ -34,6 +34,7 @@ class Book extends Component {
     };
 
     Prev = () => {
+
         if (this.state.index === 0) {
             this.state = {
                 index: BookQuotes.length

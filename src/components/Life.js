@@ -84,7 +84,7 @@ class Life extends Component {
                                                 </div>
                                             </div>
                                             <div>
-                                                <WhatsappShareButton url="#" separator=":: ">
+                                                <WhatsappShareButton url={Quote.quote} separator=":: ">
                                                     <WhatsappIcon size={70} round={true} />
                                                 </WhatsappShareButton>
                                                 <div>
